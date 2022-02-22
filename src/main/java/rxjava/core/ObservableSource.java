@@ -7,6 +7,6 @@ package rxjava.core;
  * @version 1.0.0
  * @since 2022/02/22
  */
-public interface ObservableSource {
-
+public interface ObservableSource<T> {
+    void subscribe(Observer<T> observer);
 }
